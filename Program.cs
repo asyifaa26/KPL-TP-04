@@ -24,5 +24,11 @@ internal class Program
         Console.WriteLine("Kode pos Maleer\t\t: " + kodePos.GetKodePos(Kelurahan.Maleer));
         Console.WriteLine("Kode pos Samoja\t\t: " + kodePos.GetKodePos(Kelurahan.Samoja));
 
+        Console.WriteLine("\n\n\nNomor 5 A-E : \n");
+        DoorMachine door = new DoorMachine();
+        door.DoAction(Action.BukaPintu);
+        door.DoAction(Action.KunciPintu);
+        door.DoAction(Action.KunciPintu);
+        door.DoAction(Action.BukaPintu);
     }
 }
